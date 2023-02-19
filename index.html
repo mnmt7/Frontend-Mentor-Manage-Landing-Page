@@ -18,8 +18,10 @@
             <div class="nav-wrapper">
                 <a href="#">
                     <figure class="header__logo">
-                        <img src="images/logo.svg" alt="Manage logo">
-                        <figcaption class="offscreen">Manage logo</figcaption>
+                        <svg class="icon" width="146" height="24">
+                            <use xlink:href="images/logo.svg#logo"></use>
+                        </svg>
+                        <figcaption class="visually-hidden">Manage logo</figcaption>
                     </figure>
                 </a>
                 <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
@@ -79,7 +81,7 @@
                     </div>
 
                     <div>
-                        <ul class="numbered-items | flow"  role="list">
+                        <ul class="numbered-items | flow" role="list">
                             <li>
                                 <div class="flow" style="--flow-spacer: 1em">
                                     <h3 class="fs-600 fw-bold">
@@ -147,15 +149,15 @@
         </section>
 
 
-        <section class="cta | bg-accent-400 text-accent-100">
+        <section class="cta | padding-block-900 bg-accent-400 text-accent-100">
             <div class="container">
-                <div class="even-columns">
+                <div class="even-columns vertical-align-center">
                     <div>
                         <p class="fs-secondary-heading fw-bold">
                             Simplify how your team works today.
                         </p>
                     </div>
-                    <div>
+                    <div class="justify-self-end-md">
                         <button class="button" data-type="inverted">Get Started</button>
                     </div>
                 </div>
@@ -164,26 +166,58 @@
 
     </main>
 
-    <footer class="footer | bg-neutral-900 text-neutral-100">
+    <footer class="primary-footer | padding-block-700 bg-neutral-900 text-neutral-100">
         <div class="container">
-            <div class="even-columns">
-                <div>
+            <div class="primary-footer-wrapper">
+                <div class="primary-footer-icon-social">
                     <a href="#">
                         <figure class="header__logo">
-                            <img src="images/logo.svg" alt="Manage logo">
-                            <figcaption class="offscreen">Manage logo</figcaption>
+                            <svg class="icon" width="146" height="24">
+                                <use xlink:href="images/logo.svg#logo"></use>
+                            </svg>
+                            <figcaption class="visually-hidden">Manage logo</figcaption>
                         </figure>
                     </a>
 
-                    <ul role="list" aria-label="Social links">
-                        <li><a aria-label="Facebook" href="#"></a></li>
-                        <li><a aria-label="Youtube" href="#"></a></li>
-                        <li><a aria-label="Twitter" href="#"></a></li>
-                        <li><a aria-label="Pinterest" href="#"></a></li>
-                        <li><a aria-label="Instagram" href="#"></a></li>
+                    <ul class="social-list" role="list" aria-label="Social links">
+                        <li>
+                            <a aria-label="Facebook" href="#">
+                                <svg class="social-icon">
+                                    <use xlink:href="images/social-icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a aria-label="Youtube" href="#">
+                                <svg class="social-icon">
+                                    <use xlink:href="images/social-icons.svg#icon-youtube"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a aria-label="Twitter" href="#">
+                                <svg class="social-icon">
+                                    <use xlink:href="images/social-icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a aria-label="Pinterest" href="#">
+                                <svg class="social-icon">
+                                    <use xlink:href="images/social-icons.svg#icon-pinterest"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a aria-label="Instagram" href="#">
+                                <svg class="social-icon">
+                                    <use xlink:href="images/social-icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
                     </ul>
                 </div>
-                <div>
+                <div class="primary-footer-nav">
                     <nav class="footer-nav">
                         <ul class="flow" style="--flow-spacer: 1em" role="list" aria-label="Footer">
                             <li>
@@ -211,15 +245,14 @@
                     </nav>
                 </div>
 
-                <div>
+                <div class="primary-footer-form">
                     <form action="">
                         <input type="email">
-                        <button class="button">Go</button>
+                        <button class="button" data-shadow="none">Go</button>
                     </form>
                     <p>Copyright 2020. All Rights Reserved.</p>
                 </div>
             </div>
-
         </div>
     </footer>
 </body>
