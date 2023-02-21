@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.css" />
-    <script src="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.js" defer></script>
+    <!-- <script src="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.js" defer></script> -->
 </head>
 
 <body>
@@ -28,8 +28,15 @@
                 </a>
                 <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
                     <span class="visually-hidden">Menu</span>
-                    <img class="icon- hamburger" src="images/icon-hamburger.svg" alt="">
-                    <img class="icon-close" src="images/icon-close.svg" alt="">
+                    <figure>
+                        <img class="icon-hamburger" src="images/icon-hamburger.svg" alt="Hamburger Icon">
+                        <figcaption class="visually-hidden">Hamburger Icon</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img class="icon-close" src="images/icon-close.svg" alt="Close Icon">
+                        <figcaption class="visually-hidden">Close Icon</figcaption>
+                    </figure>
                 </button>
                 <nav class="primary-navigation" id="primary-navigation">
                     <ul aria-label="Primary" role="list" class="nav-list">
@@ -49,13 +56,13 @@
                             <a href="#">Community</a>
                         </li>
                     </ul>
-
+                    
                 </nav>
                 <buttton class="button | display-md-inline-flex display-sm-none" href="#">Get Started</button>
             </div>
         </div>
     </header>
-
+    
     <main>
         <section>
             <div class="container">
@@ -63,8 +70,8 @@
                     <div class="flow">
                         <h1 class="fs-primary-heading text-primary-400 fw-bold">Bring everyone together to build better
                             products</h1>
-                        <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste quo totam nobis est
-                            reiciendis maiores ex distinctio numquam eum, explicabo quis .</p>
+                            <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste quo totam nobis est
+                                reiciendis maiores ex distinctio numquam eum, explicabo quis .</p>
                     </div>
                     <figure>
                         <img src="images/illustration-intro.svg" alt="">
@@ -80,16 +87,16 @@
                         <h2 class="fs-secondary-heading fw-bold">Whats different about Manage?</h2>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate, dolore rem? Quo hic
                             quibusdam excepturi eius odit assumenda suscipit quam nostrum placeat.</p>
-                    </div>
-
-                    <div>
+                        </div>
+                        
+                        <div>
                         <ul class="numbered-items | flow" role="list">
                             <li>
                                 <div class="flow" style="--flow-spacer: 1em">
                                     <h3 class="numbered-items__title | fs-600 fw-bold">
                                         Track company-wide progress
                                     </h3>
-
+                                    
                                     <p class="numbered-items__body" data-width="wide">
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde accusantium iusto
                                         ad
@@ -135,25 +142,32 @@
             </div>
         </section>
 
-
-        <section class="carousel">
+        
+        <section class="carousel | text-center">
             <h2 class="fs-secondary-heading fw-bold">
                 What they've said
             </h2>
-
+            
             <ul class="slider">
-                <li>1</li>
+                <li>
+                    <figure>
+                        <img src="images/avatar-ali.png" alt="Ali's Photo">
+                        <figcaption class="visually-hidden">Ali's Photo</figcaption>
+                    </figure>
+                    <h3 class="fw-bold">Ali Bravo</h3>
+                    <p data-width="wide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quae voluptatibus atque optio ipsam ex deserunt provident, id in recusandae cumque, dignissimos praesentium quaerat hic, deleniti nesciunt est amet dolore?</p>
+                </li>
                 <li>2</li>
                 <li>3</li>
                 <li>4</li>
             </ul>
-
+            
             <button class="button">
                 Get Started
             </button>
         </section>
 
-
+        
         <section class="cta | padding-block-900 bg-accent-400 text-accent-100">
             <div class="container">
                 <div class="even-columns vertical-align-center">
@@ -183,7 +197,7 @@
                             <figcaption class="visually-hidden">Manage logo</figcaption>
                         </figure>
                     </a>
-
+                    
                     <ul class="social-list" role="list" aria-label="Social links">
                         <li>
                             <a aria-label="Facebook" href="#">
@@ -262,6 +276,7 @@
     </footer>
 </body>
 
+<script src="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.js"></script>
 <script src="main.js"></script>
 
 </html>
