@@ -1,6 +1,11 @@
 const slider = new A11YSlider(document.querySelector(".slider"), {
   adaptiveHeight: true,
-  dots: false,
+  dots: true,
+  responsive: {
+    480: {
+      dots: false,
+    }
+  }
 });
 
 const navToggle = document.querySelector(".mobile-nav-toggle");
